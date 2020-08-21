@@ -1,6 +1,13 @@
-const pkgs = require("./package.json");
+const path = require("path");
+
+const rootPath = path.resolve(__dirname);
 
 module.exports = {
-  publicPath:
-    process.env.NODE_ENV === "production" ? "/" + pkgs.pages.name + "/" : "/",
+  publicPath: "/",
+  transpileDependencies: ["vuetify"],
+  chainWebpack: function(config) {
+    config.resolve.alias.set("@", path.resolve(rootPath, "src/"));
+
+    return config;
+  },
 };
