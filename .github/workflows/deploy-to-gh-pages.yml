@@ -5,18 +5,20 @@ on:
       - master
 jobs:
   build-and-deploy:
+    name: build-and-deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@master
+      - name: Set up Node.js
+        uses: actions/setup-node@master
         with:
-          persist-credentials: false
-
+          node-version: "12"
+          registry-url: "https://registry.npmjs.org"
       - name: Install and Build 🔧
         run: |
           npm install
-          npm run-script build
-
+          npm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
