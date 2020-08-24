@@ -1,3 +1,7 @@
+![Build and Deploy](https://github.com/towry/demo/workflows/Build%20and%20Deploy/badge.svg)
+
+---
+
 # fe-demo
 
 确保本地运行下 npm install，以保证 package.json 和 package-lock.json 是同步的.
