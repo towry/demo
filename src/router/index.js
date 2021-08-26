@@ -15,6 +15,10 @@ const routes = [
     component: () => import("@/views/animation/LottieJob.vue"),
   },
   {
+    path: "/gaode",
+    component: () => import("@/views/gaode/index.vue"),
+  },
+  {
     path: "*",
     name: "NotFound",
     component: () => import("@/views/system/404.vue"),
