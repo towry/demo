@@ -5,6 +5,6 @@ export default [
   },
   {
     to: "/gaode",
-    title: "Gaode bug",
+    title: "高德地图 bug -- Gaode bug",
   },
 ];
