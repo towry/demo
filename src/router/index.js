@@ -19,6 +19,10 @@ const routes = [
     component: () => import("@/views/gaode/index.vue"),
   },
   {
+    path: "/job-builder",
+    component: () => import("@/views/job/JobBuilder.vue"),
+  },
+  {
     path: "*",
     name: "NotFound",
     component: () => import("@/views/system/404.vue"),

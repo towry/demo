@@ -1,7 +1,7 @@
 <template>
   <div>
     <br />
-    <div><h3>似乎是占用大量内存导致页面不断刷新<h3></div>
+    <div><h3>似乎是占用大量内存导致页面不断刷新</h3></div>
     <br />
     <div id="map" ref="map"></div>
   </div>
